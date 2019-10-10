@@ -57,6 +57,7 @@ table {
 	width: 100%;
 	overflow: inherit;
 }
+//mixin
 .flex-even{
 	display: flex;
 	justify-content: space-evenly;
@@ -96,7 +97,7 @@ body {
 	width: 60%;
 	color: black;
 	@media only screen and (max-width:500px){
-		.small-screen();
+		.small-screen();//variable
 	}
 
 	h1{
@@ -163,7 +164,7 @@ footer{
 	text-align: center;
 	
 	nav{
-		.flex-even();
+		.flex-even();//variable
 		padding-top: 5%;
 		margin-bottom: 5%;
 
