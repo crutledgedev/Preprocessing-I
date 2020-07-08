@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+
 }
 ol, ul {
 	list-style: none;
@@ -47,13 +48,137 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+//import font from google
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+
+//mixin
+
+.small-screen{
+	width: 100%;
+	overflow: inherit;
+}
+//mixin
+.flex-even{
+	display: flex;
+	justify-content: space-evenly;
+}
+
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px grey;//delete this when done.. only there for placeholding
+
 }
 
-html, body {
-    height: 100%;
+body {
+	height: 100%;
+	font-size: 62.5%;
+	background: #efefef;
+	font-family: Mansalva;
 }
+.profile-img {
+	width: 40%;
+	float: right;
+	padding-right: 3%;
+	padding-top: 3%;
+	img{
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+	}//end img//
+ 
+
+	}//end tech-icons
+
+.profile-info{
+	padding: 3%;
+	height: 100%;
+	width: 60%;
+	color: black;
+	@media only screen and (max-width:500px){
+		.small-screen();//variable
+	}
+
+	h1{
+		font-size: 3.5rem;
+	}//end h1
+	h2{
+		font-size: 1.5rem;
+	}
+	
+	.about{
+		font-size: 1.4rem;
+		padding-top: 3%;
+		margin-left: 3%;
+		
+	}//emd about
+	.tech-icons{
+		padding-left: 3%;
+		margin-top: 3%;
+		margin-bottom: 5%;
+		i{
+			font-size: 1.5rem;
+			padding-top: 2%;
+			
+
+		}
+	}//end tech-icons
+		.stuff-ive-done{
+			padding-top: 3%;
+			margin-left: 6%;
+			display: inline-block;
+			width: 30%;
+			text-align: center;
+			background-color: white;
+			
+			h2{
+				font-size: 1.5rem;
+				padding-bottom: 5%;
+				padding-top: 3%;
+				display: block;
+			}
+		}	//end stuff ive done
+
+	
+}//end profile info
+
+.and-more{
+	
+	font-family: tahoma;
+	text-align: center;
+	margin-bottom: 3%;
+	
+	h3{
+		font-size: 1rem;
+		padding-bottom: 2%;
+	} 
+	p{
+		font-size: 0.8rem;
+		
+	}
+}//end and-more
+	
+footer{
+	width: 100%;
+	text-align: center;
+	
+	nav{
+		.flex-even();//variable
+		padding-top: 5%;
+		margin-bottom: 5%;
+
+		a{
+			font-size: 1.3rem;
+
+		}//end a
+
+	}//end nav
+
+}//end footer
+
+
+	 
+
+
 
